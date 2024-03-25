@@ -6,181 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Perfil do Estudante</title>
-
-    <style>
-        body {
-            background-color: #FAFAFA;
-            font-family: 'Montserrat', sans-serif;
-            justify-content: center;
-        }
-
-        .container {
-            margin-left: 77px;
-            flex-wrap: wrap;
-            margin-top: 0;
-        }
-
-        .nav {
-
-            display: flex;
-            flex-direction: row;
-            gap: 0.6rem;
-            position: fixed;
-            width: 4rem;
-            height: 182.25rem;
-            left: 0px;
-            top: 0px;
-            background: #5C0D0D;
-
-        }
-
-        #perfil_estudante {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.4rem;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 2.5rem;
-            line-height: 4rem;
-
-
-        }
-
-        .profile img {
-            padding: 2.7rem;
-            width: 12.6rem;
-            height: 12.6rem;
-            border-radius: 50%;
-        }
-
-        .profile p {
-            margin-bottom: 0.5rem;
-        }
-
-        a:-webkit-any-link {
-            cursor: pointer;
-            text-decoration: none;
-            color: black;
-        }
-
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-top: 2rem;
-            margin-left: 20rem;
-            font-weight: 450;
-        }
-
-        .profile-info,
-        .profile img {
-            flex-direction: column;
-
-        }
-
-        .social-icons {
-            margin-top: 0px;
-            display: flex;
-            justify-content: start;
-            margin-left: 23rem;
-        }
-
-        .social-icons a {
-            margin: 10px 10px;
-
-        }
-
-
-        #nome-curso {
-            font-style: normal;
-            font-weight: 500;
-            line-height: 6rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.4rem;
-            margin: 28px 0px 14px;
-
-        }
-
-        .progresso-curso {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-style: normal;
-            gap: 5rem;
-            flex-direction: column;
-        }
-
-        .progress-bar {
-            position: relative;
-            width: 36%;
-            height: 24px;
-            background-color: #ddd;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 0.5rem;
-        }
-
-        .progress-text {
-            display: flex;
-            justify-content: center;
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-
-        }
-
-        .progress-bar-inner {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            background-color: #5C0D0D;
-            border-radius: 4px;
-            transition: width 0.5s ease-in-out;
-        }
-
-        .uc {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 44px;
-        }
-
-
-        .card-uc {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-            width: 517px;
-            height: 116px;
-            background: #EBD8D8;
-            border-radius: 20px;
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-        }
-
-        .nome_uc {
-            display: flex;
-            flex-direction: column;
-            margin-left: 1rem;
-        }
-
-        
-    </style>
 </head>
 
 <body>
@@ -268,64 +97,92 @@
         </div>
 
         <div class="uc">
-            <h1>Uc’s concluídas</h1>
+            <h1 id="titulo_uc">Uc’s concluídas</h1>
+
+            <div class="cards">
 
             <div class="card-uc">
                 <div class="nome_uc">Modelagem de Software
                     <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                    <div class="progress-uc">
+                    <div class="porcentagem">100%</div>
+                    <div class="progress-bar-uc">
+                        <div class="progress-bar-inner" style="width: 100%;"></div>
+                    </div>
+                </div>    
+                </div>  
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Modelagem de Software
+                    <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                    <div class="progress-uc">
+                    <div class="porcentagem">100%</div>
+                    <div class="progress-bar-uc">
+                        <div class="progress-bar-inner" style="width: 100%;"></div>
+                    </div>
+                </div>    
+                </div>  
+            </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="card-uc">
+            <div class="nome_uc">Modelagem de Software
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                <div class="progress-uc">
+                <div class="porcentagem">100%</div>
+                <div class="progress-bar-uc">
+                    <div class="progress-bar-inner" style="width: 100%;"></div>
                 </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Programação de soluções computacionais
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Ambientes computacionais e conectividade
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Sistemas distribuídos e mobile
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Modelos, métodos e técnicas da engenharia de software
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Gestão e qualidade de software
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Inovação, sustentabilidade e competitividade empresarial
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Sistemas computacionais e segurança
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            </div>
-                <div>100%</div>
-            </div>
+            </div>    
+            </div>  
         </div>
+
+        <div class="card-uc">
+            <div class="nome_uc">Modelagem de Software
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                <div class="progress-uc">
+                <div class="porcentagem">100%</div>
+                <div class="progress-bar-uc">
+                    <div class="progress-bar-inner" style="width: 100%;"></div>
+                </div>
+            </div>    
+            </div>  
+        </div>
+</div>
+
+<div class="cards">
+
+    <div class="card-uc">
+        <div class="nome_uc">Modelagem de Software
+            <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            <div class="progress-uc">
+            <div class="porcentagem">100%</div>
+            <div class="progress-bar-uc">
+                <div class="progress-bar-inner" style="width: 100%;"></div>
+            </div>
+        </div>    
+        </div>  
+    </div>
+
+    <div class="card-uc">
+        <div class="nome_uc">Modelagem de Software
+            <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            <div class="progress-uc">
+            <div class="porcentagem">100%</div>
+            <div class="progress-bar-uc">
+                <div class="progress-bar-inner" style="width: 100%;"></div>
+            </div>
+        </div>    
+        </div>  
+    </div>
+</div>
+</div>
+    </div>
+
+        
 
 
         <div class="perfil_academico">

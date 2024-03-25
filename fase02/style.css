@@ -1,0 +1,200 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+.container {
+    margin-left: 77px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.nav {
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    position: fixed;
+    width: 4rem;
+    height: 182.25rem;
+    left: 0px;
+    top: 0px;
+    background: #5C0D0D;
+
+}
+
+#perfil_estudante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 4rem;
+
+
+}
+
+.profile img {
+    padding: 2.7rem;
+    width: 12.6rem;
+    height: 12.6rem;
+    border-radius: 50%;
+}
+
+.profile p {
+    margin-bottom: 0.5rem;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: center;
+    font-weight: 450;
+}
+
+.profile-info,
+.profile img {
+    flex-direction: column;
+
+}
+
+.social-icons {
+    margin-top: 0px;
+    display: flex;
+    justify-content: start;
+    margin-left: 23rem;
+}
+
+.social-icons a {
+    margin: 10px 10px;
+
+}
+
+
+#nome-curso {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 28px 0px 14px;
+
+}
+
+.progresso-curso {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.progress-bar {
+    position: relative;
+    width: 36%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.progress-bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #5C0D0D;
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out;
+}
+
+.uc {
+    display: block;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 44px;
+}
+
+#titulo_uc {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-direction: row;  
+    padding: 0.9rem; 
+}
+
+.card-uc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 116px;
+    width: 50%;
+    background: #EBD8D8;
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.nome_uc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.cod_curso{
+    font-size: 0.7rem;
+}
+
+.porcentagem {
+    font-size: 0.9rem;
+}
+.progress-uc{
+    margin-top: 10px;
+}
+
+.progress-bar-uc {
+    position: relative;
+    width: 97%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
