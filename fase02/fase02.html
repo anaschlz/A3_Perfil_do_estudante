@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Perfil do Estudante</title>
+
+    <style>
+        body {
+            background-color: #FAFAFA;
+            font-family: 'Montserrat', sans-serif;
+            justify-content: center;
+        }
+
+        .container {
+            margin-left: 77px;
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+
+        .nav {
+
+            display: flex;
+            flex-direction: row;
+            gap: 0.6rem;
+            position: fixed;
+            width: 4rem;
+            height: 182.25rem;
+            left: 0px;
+            top: 0px;
+            background: #5C0D0D;
+
+        }
+
+        #perfil_estudante {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.5rem;
+            line-height: 4rem;
+
+
+        }
+
+        .profile img {
+            padding: 2.7rem;
+            width: 12.6rem;
+            height: 12.6rem;
+            border-radius: 50%;
+        }
+
+        .profile p {
+            margin-bottom: 0.5rem;
+        }
+
+        a:-webkit-any-link {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            margin-left: 20rem;
+            font-weight: 450;
+        }
+
+        .profile-info,
+        .profile img {
+            flex-direction: column;
+
+        }
+
+        .social-icons {
+            margin-top: 0px;
+            display: flex;
+            justify-content: start;
+            margin-left: 23rem;
+        }
+
+        .social-icons a {
+            margin: 10px 10px;
+
+        }
+
+
+        #nome-curso {
+            font-style: normal;
+            font-weight: 500;
+            line-height: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+            margin: 28px 0px 14px;
+
+        }
+
+        .progresso-curso {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-style: normal;
+            gap: 5rem;
+            flex-direction: column;
+        }
+
+        .progress-bar {
+            position: relative;
+            width: 36%;
+            height: 24px;
+            background-color: #ddd;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        .progress-text {
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+
+        }
+
+        .progress-bar-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #5C0D0D;
+            border-radius: 4px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .uc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 44px;
+        }
+
+
+        .card-uc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            width: 517px;
+            height: 116px;
+            background: #EBD8D8;
+            border-radius: 20px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .nome_uc {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 id="perfil_estudante">PERFIL DO ESTUDANTE</h1>
+
+        <div class="nav"></div>
+
+
+        <div class="profile">
+
+            <img src="perfil.jpg" alt="Foto de Perfil">
+
+            <div class="profile-info">
+
+                <p>Ana Luisa Silva Schulz</p>
+                <p><a href="mailto:analu.sschulz@gmail.com">analu.sschulz@gmail.com</a></p>
+                <p>RA: 1221114673</p>
+                <p>Av. Professor Mário Werneck, 1685, Estoril, Belo Horizonte - MG, 30575-180</p>
+
+            </div>
+        </div>
+
+        <div class="social-icons">
+
+            <a href="https://www.linkedin.com/in/anaschlz" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                    version="1.1" id="Capa_1" width="32" height="32" viewBox="0 0 490.732 490.732" xml:space="preserve">
+                    <path
+                        d="M472.366,0.003H18.36C8.219,0.003,0,8.222,0,18.363v454.005c0,10.143,8.219,18.361,18.36,18.361h454.012    c10.142,0,18.36-8.219,18.36-18.361V18.363C490.727,8.222,482.507,0.003,472.366,0.003z M130.375,403.808    c0,6.762-5.478,12.238-12.24,12.238H69.132c-6.756,0-12.24-5.477-12.24-12.238V189.625c0-6.763,5.484-12.24,12.24-12.24h49.003    c6.762,0,12.24,5.477,12.24,12.24V403.808z M130.375,127.482c0,6.763-5.478,12.24-12.24,12.24H69.132    c-6.756,0-12.24-5.478-12.24-12.24V83.969c0-6.763,5.484-12.24,12.24-12.24h49.003c6.762,0,12.24,5.477,12.24,12.24V127.482z     M433.835,403.808c0,6.762-5.483,12.238-12.24,12.238h-49.003c-6.763,0-12.24-5.477-12.24-12.238v-90.436    c0-29.988-1.566-49.383-4.712-58.189c-3.14-8.807-8.237-15.649-15.3-20.526c-7.062-4.884-15.558-7.32-25.496-7.32    c-12.729,0-24.149,3.488-34.26,10.459c-10.11,6.977-17.038,16.211-20.79,27.717c-3.745,11.506-5.618,32.779-5.618,63.807v74.488    c0,6.762-5.483,12.238-12.24,12.238h-49.003c-6.756,0-12.24-5.477-12.24-12.238V189.625c0-6.763,5.483-12.24,12.24-12.24h43.771    c6.763,0,12.24,5.477,12.24,12.24v16.316c0,6.763,3.312,7.852,7.858,2.852c22.864-25.123,50.753-37.687,83.673-37.687    c16.212,0,31.028,2.919,44.455,8.758c13.422,5.838,23.58,13.292,30.466,22.356c6.885,9.063,11.683,19.351,14.382,30.857    c2.699,11.505,4.058,27.98,4.058,49.426V403.808L433.835,403.808z" />
+                </svg>
+            </a>
+
+            <a href="https://github.com/anaschlz" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                    width="32" height="32" viewBox="0 0 20 20" version="1.1">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path
+                                    d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                    id="github-[#142]"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/anaschlz" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 24C20.4183 24 24 20.4183 24 16C24 11.5817 20.4183 8 16 8C11.5817 8 8 11.5817 8 16C8 20.4183 11.5817 24 16 24ZM16 21.3333C18.9455 21.3333 21.3333 18.9455 21.3333 16C21.3333 13.0545 18.9455 10.6667 16 10.6667C13.0545 10.6667 10.6667 13.0545 10.6667 16C10.6667 18.9455 13.0545 21.3333 16 21.3333Z"
+                        fill="#0F0F0F" />
+                    <path
+                        d="M24 6.66669C23.2636 6.66669 22.6667 7.26365 22.6667 8.00002C22.6667 8.73639 23.2636 9.33335 24 9.33335C24.7364 9.33335 25.3334 8.73639 25.3334 8.00002C25.3334 7.26365 24.7364 6.66669 24 6.66669Z"
+                        fill="#0F0F0F" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.20526 5.70139C1.33331 7.41269 1.33331 9.6529 1.33331 14.1333V17.8666C1.33331 22.347 1.33331 24.5873 2.20526 26.2985C2.97225 27.8038 4.19609 29.0277 5.70139 29.7946C7.41269 30.6666 9.6529 30.6666 14.1333 30.6666H17.8666C22.347 30.6666 24.5873 30.6666 26.2985 29.7946C27.8038 29.0277 29.0277 27.8038 29.7946 26.2985C30.6666 24.5873 30.6666 22.347 30.6666 17.8666V14.1333C30.6666 9.6529 30.6666 7.41269 29.7946 5.70139C29.0277 4.19609 27.8038 2.97225 26.2985 2.20526C24.5873 1.33331 22.347 1.33331 17.8666 1.33331H14.1333C9.6529 1.33331 7.41269 1.33331 5.70139 2.20526C4.19609 2.97225 2.97225 4.19609 2.20526 5.70139ZM17.8666 3.99998H14.1333C11.8491 3.99998 10.2963 4.00206 9.09609 4.10011C7.92697 4.19563 7.3291 4.36877 6.91203 4.58127C5.9085 5.09261 5.09261 5.9085 4.58127 6.91203C4.36877 7.3291 4.19563 7.92697 4.10011 9.09609C4.00206 10.2963 3.99998 11.8491 3.99998 14.1333V17.8666C3.99998 20.1509 4.00206 21.7036 4.10011 22.9038C4.19563 24.073 4.36877 24.6709 4.58127 25.088C5.09261 26.0914 5.9085 26.9073 6.91203 27.4186C7.3291 27.6312 7.92697 27.8044 9.09609 27.8998C10.2963 27.9978 11.8491 28 14.1333 28H17.8666C20.1509 28 21.7036 27.9978 22.9038 27.8998C24.073 27.8044 24.6709 27.6312 25.088 27.4186C26.0914 26.9073 26.9073 26.0914 27.4186 25.088C27.6312 24.6709 27.8044 24.073 27.8998 22.9038C27.9978 21.7036 28 20.1509 28 17.8666V14.1333C28 11.8491 27.9978 10.2963 27.8998 9.09609C27.8044 7.92697 27.6312 7.3291 27.4186 6.91203C26.9073 5.9085 26.0914 5.09261 25.088 4.58127C24.6709 4.36877 24.073 4.19563 22.9038 4.10011C21.7036 4.00206 20.1509 3.99998 17.8666 3.99998Z" />
+                </svg>
+            </a>
+
+            <a href="https://www.x.com/anaschlz" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none">
+                    <path
+                        d="M24.3253 3H28.736L19.1 14.0133L30.436 29H21.56L14.608 19.9107L6.65333 29H2.24L12.5467 17.22L1.672 3H10.7733L17.0573 11.308L24.3253 3ZM22.7773 26.36H25.2213L9.44533 5.50133H6.82266L22.7773 26.36Z"
+                        fill="black" />
+                </svg>
+            </a>
+        </div>
+
+
+        <div class="curso">
+            <h1 id="nome-curso"> Análise e desenvolvimento de sistemas </h1>
+            <div class="progress-text">5° Semestre</div>
+            <div class="progresso-curso">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 80%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="uc">
+            <h1>Uc’s concluídas</h1>
+
+            <div class="card-uc">
+                <div class="nome_uc">Modelagem de Software
+                    <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Programação de soluções computacionais
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Ambientes computacionais e conectividade
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Sistemas distribuídos e mobile
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Modelos, métodos e técnicas da engenharia de software
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Gestão e qualidade de software
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Inovação, sustentabilidade e competitividade empresarial
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+
+            <div class="card-uc">
+                <div class="nome_uc">Sistemas computacionais e segurança
+                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+            </div>
+                <div>100%</div>
+            </div>
+        </div>
+
+
+        <div class="perfil_academico">
+            <h1> Meu perfil proficional/acadêmico</h1>
+            <textarea rows="4"
+                cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at sagittis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices nisi id iaculis aliquam. Aliquam sed tellus suscipit tortor venenatis cursus. Etiam nibh nisl, sagittis a nibh vitae, finibus blandit tellus. Nunc sagittis, arcu hendrerit lacinia auctor, nulla arcu dignissim mauris, vitae commodo turpis lectus id nibh. Nam sit amet quam purus. Integer placerat tempus ligula, in gravida urna scelerisque eu.<br><br>
+            Vivamus quis tortor orci. Vivamus tristique posuere urna sit amet euismod. Donec ac posuere nulla. Praesent tristique urna lacus, eget vulputate magna fringilla et. Aenean tristique ultricies arcu eu lacinia. Proin tincidunt dolor arcu, varius rutrum odio bibendum id. Pellentesque ultricies facilisis fringilla. Quisque volutpat ante nunc, quis gravida nulla condimentum eu. Praesent ultrices vehicula lorem ac tincidunt. Vestibulum non eleifend purus. Etiam quis mattis justo. Sed pulvinar nulla ut maximus vehicula.</textarea><br>
+            <button type="button">Editar</button>
+        </div>
+
+        <div class="perfil_pessoal">
+            <h1>Breve descrição de seu perfil pessoal</h1>
+            <h2>(Hobbies, Família, esportes etc.)</h2>
+            <textarea rows="4"
+                cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at sagittis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices nisi id iaculis aliquam. Aliquam sed tellus suscipit tortor venenatis cursus. Etiam nibh nisl, sagittis a nibh vitae, finibus blandit tellus. Nunc sagittis, arcu hendrerit lacinia auctor, nulla arcu dignissim mauris, vitae commodo turpis lectus id nibh. Nam sit amet quam purus. Integer placerat tempus ligula, in gravida urna scelerisque eu.</textarea><br>
+            <button type="button">Editar</button>
+        </div> <br><br><br><br><br><br>
+
+    </div>
+    </div>
+</body>
+
+</html>
