@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Perfil do Estudante</title>
 </head>
 
 <body>
 
+    <div class="nav"></div>
 
     <div class="container">
         <h1 id="perfil_estudante">PERFIL DO ESTUDANTE</h1>
 
-        <div class="nav"></div>
-
 
         <div class="profile">
+            <div class="foto_perfil">
+                <img id="profile-picture" src="/perfil.jpg" alt="Foto de Perfil">
+                <a href="#modal">Selecionar foto de perfil</a>
+            </div>
 
-            <img src="/perfil.jpg" alt="Foto de Perfil">
+            <div id="modal" class="modal-container">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Galeria de Fotos</h2>
+                    <div class="galeria">
+                        <img src="/perfil.jpg" alt="Foto 1" onclick="changeProfilePicture(this)">
+                        <img src="foto1.jpg" alt="Foto 1"  onclick="changeProfilePicture(this)">
+                        <img src="foto2.jpg" alt="Foto 2"  onclick="changeProfilePicture(this)">
+                        <img src="foto3.jpg" alt="Foto 3"  onclick="changeProfilePicture(this)">
+                    </div>
+                </div>
+            </div>
 
             <div class="profile-info">
 
@@ -33,6 +46,7 @@
                 <p>Av. Professor Mário Werneck, 1685, Estoril, Belo Horizonte - MG, 30575-180</p>
 
             </div>
+
         </div>
 
         <div class="social-icons">
@@ -96,113 +110,153 @@
 
         </div>
 
-        <div class="uc">
-            <h1 id="titulo_uc">Uc’s concluídas</h1>
+        <div id="titulo_uc">
+            <h1>Uc’s concluídas</h1>
 
-            <div class="cards">
+            <hr>
 
-            <div class="card-uc">
-                <div class="nome_uc">Modelagem de Software
-                    <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-                    <div class="progress-uc">
-                    <div class="porcentagem">100%</div>
-                    <div class="progress-bar-uc">
-                        <div class="progress-bar-inner" style="width: 100%;"></div>
+            <div class="uc">
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Modelagem de Software</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>    
-                </div>  
-            </div>
-
-            <div class="card-uc">
-                <div class="nome_uc">Modelagem de Software
-                    <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-                    <div class="progress-uc">
-                    <div class="porcentagem">100%</div>
-                    <div class="progress-bar-uc">
-                        <div class="progress-bar-inner" style="width: 100%;"></div>
-                    </div>
-                </div>    
-                </div>  
-            </div>
-    </div>
-
-    <div class="cards">
-
-        <div class="card-uc">
-            <div class="nome_uc">Modelagem de Software
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-                <div class="progress-uc">
-                <div class="porcentagem">100%</div>
-                <div class="progress-bar-uc">
-                    <div class="progress-bar-inner" style="width: 100%;"></div>
                 </div>
-            </div>    
-            </div>  
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Programação de soluções computacionais</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Ambientes computacionais e conectividade</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Sistemas distribuídos e mobile</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Modelos, métodos e técnicas da engenharia de software</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Gestão e qualidade de software</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Inovação, sustentabilidade e competitividade empresarial</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-uc">
+                    <div class="detalhes_uc">
+                        <div class="nome_uc">Sistemas computacionais e segurança</div>
+                        <div class="cod_curso">ADS1AM-ESA1-1653573</div>
+                        <div class="progress-uc">
+                            <div class="porcentagem">100%</div>
+                            <div class="progress-bar-uc">
+                                <div class="progress-bar-inner" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="card-uc">
-            <div class="nome_uc">Modelagem de Software
-                <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-                <div class="progress-uc">
-                <div class="porcentagem">100%</div>
-                <div class="progress-bar-uc">
-                    <div class="progress-bar-inner" style="width: 100%;"></div>
-                </div>
-            </div>    
-            </div>  
-        </div>
-</div>
-
-<div class="cards">
-
-    <div class="card-uc">
-        <div class="nome_uc">Modelagem de Software
-            <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            <div class="progress-uc">
-            <div class="porcentagem">100%</div>
-            <div class="progress-bar-uc">
-                <div class="progress-bar-inner" style="width: 100%;"></div>
-            </div>
-        </div>    
-        </div>  
-    </div>
-
-    <div class="card-uc">
-        <div class="nome_uc">Modelagem de Software
-            <div class="cod_curso">ADS1AM-ESA1-1653573</div>
-            <div class="progress-uc">
-            <div class="porcentagem">100%</div>
-            <div class="progress-bar-uc">
-                <div class="progress-bar-inner" style="width: 100%;"></div>
-            </div>
-        </div>    
-        </div>  
-    </div>
-</div>
-</div>
-    </div>
-
-        
 
 
         <div class="perfil_academico">
-            <h1> Meu perfil proficional/acadêmico</h1>
-            <textarea rows="4"
-                cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at sagittis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices nisi id iaculis aliquam. Aliquam sed tellus suscipit tortor venenatis cursus. Etiam nibh nisl, sagittis a nibh vitae, finibus blandit tellus. Nunc sagittis, arcu hendrerit lacinia auctor, nulla arcu dignissim mauris, vitae commodo turpis lectus id nibh. Nam sit amet quam purus. Integer placerat tempus ligula, in gravida urna scelerisque eu.<br><br>
-            Vivamus quis tortor orci. Vivamus tristique posuere urna sit amet euismod. Donec ac posuere nulla. Praesent tristique urna lacus, eget vulputate magna fringilla et. Aenean tristique ultricies arcu eu lacinia. Proin tincidunt dolor arcu, varius rutrum odio bibendum id. Pellentesque ultricies facilisis fringilla. Quisque volutpat ante nunc, quis gravida nulla condimentum eu. Praesent ultrices vehicula lorem ac tincidunt. Vestibulum non eleifend purus. Etiam quis mattis justo. Sed pulvinar nulla ut maximus vehicula.</textarea><br>
+            <h2 class="titulo_h2">Meu perfil acadêmico</h2>
+            <textarea rows="4" cols="50"
+                maxlength="250">Faça um resumo do seu perfil acadêmico e profissional</textarea>
+            <br>
             <button type="button">Editar</button>
         </div>
 
         <div class="perfil_pessoal">
-            <h1>Breve descrição de seu perfil pessoal</h1>
-            <h2>(Hobbies, Família, esportes etc.)</h2>
-            <textarea rows="4"
-                cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at sagittis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices nisi id iaculis aliquam. Aliquam sed tellus suscipit tortor venenatis cursus. Etiam nibh nisl, sagittis a nibh vitae, finibus blandit tellus. Nunc sagittis, arcu hendrerit lacinia auctor, nulla arcu dignissim mauris, vitae commodo turpis lectus id nibh. Nam sit amet quam purus. Integer placerat tempus ligula, in gravida urna scelerisque eu.</textarea><br>
+            <h2 class="titulo_h2">Breve descrição de seu perfil pessoal (Hobbies, Família, esportes etc.)</h2>
+            <textarea rows="4" cols="50" maxlength="250">Faça um resumo do seu perfil pessoal</textarea>
+            <br>
             <button type="button">Editar</button>
-        </div> <br><br><br><br><br><br>
+        </div>
+
+    </div>
 
     </div>
     </div>
+
 </body>
+<script>
+    function toggleModal() {
+        var modal = document.getElementById('modal');
+        modal.classList.toggle('active');
+    }
+
+    function changeProfilePicture(element) {
+        var profilePicture = document.getElementById('profile-picture');
+        profilePicture.src = element.src;
+        toggleModal(); 
+    }
+</script>
 
 </html>
