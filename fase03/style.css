@@ -1,0 +1,371 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: block;
+    float: left;
+    flex-direction: row;
+    gap: 0.6rem;
+    position: fixed;
+    width: 4rem;
+    height: 100%;
+    top: 0;
+    background: #5C0D0D;
+}
+
+.container {
+    padding: 20px;
+    margin-left: 120px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#perfil_estudante {
+    font-size: 2.5rem;
+    margin: 30px;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    font-weight: 450;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#salvar_perfil {
+    background-color: #5C0D0D;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #5C0D0D;
+    border-width: 1px;
+}
+
+.foto_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info {
+    flex: auto;
+    max-width: max-content;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.curso {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 80%;
+    max-width: 985px;
+    margin: 0 auto;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background-color: #5C0D0D;
+    transition: width 0.5s ease-in-out;
+    border-radius: 4px;
+}
+
+#titulo_uc {
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-right: 60px;
+}
+
+.nome_uc {
+    display: flex;
+    flex-direction: column;
+}
+
+.cod_curso {
+    font-size: 0.7rem;
+}
+
+.uc {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-uc {
+    width: calc(50% - 20px);
+    max-width: 380px;
+    padding: 20px;
+    background: #EBD8D8;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.detalhes_uc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around
+}
+
+.progress-uc {
+    margin-top: 10px;
+}
+
+.porcentagem {
+    font-size: 0.9rem;
+}
+
+.progress-bar-uc {
+    border-radius: 5px;
+    position: relative;
+    width: 97%;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.addUC {
+    background-color: #5C0D0D;
+    border: none;
+    color: white;
+    padding: 15px 21px;
+    font-size: 1.8rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botaoUC {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.btnSalvar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+.titulo_h2 {
+    font-size: 1.7rem;
+    margin: 30px;
+}
+
+textarea {
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    resize: none;
+    border: 1px solid #5C0D0D;
+}
+
+textarea:focus {
+    background-color: none;
+    color: #000000;
+    outline: none;
+}
+
+
+#editar_perfil {
+    font-size: 1rem;
+    padding: 15px 30px;
+    background-color: #5C0D0D;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+}
+
+.editar {
+    font-size: 1.2rem;
+    padding: 20px 25px;
+    background-color: #5C0D0D;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilo do modal foto perfil*/
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15% auto;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.close-button {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    cursor: pointer;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #5C0D0D;
+    border-width: 1px;
+}
+
+.modal-container:target {
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        width: 100%;
+        position: relative;
+    }
+
+    .container {
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #perfil_estudante {
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin: 10px auto;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .card-uc {
+        width: 100%;
+    }
+
+    .uc {
+        margin-top: 10px;
+    }
+
+    .modal-content {
+        max-width: 80%;
+    }
+
+    .galeria img {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="./style.css">
     <title>Perfil do Estudante</title>
 </head>
-
 <body>
 
     <div class="nav"></div>
@@ -31,23 +30,35 @@
                     <h2>Galeria de Fotos</h2>
                     <div class="galeria">
                         <img src="perfil.jpg" alt="Foto 1" onclick="changeProfilePicture(this)">
-                        <img src="foto1.jpg" alt="Foto 1"  onclick="changeProfilePicture(this)">
-                        <img src="foto2.jpg" alt="Foto 2"  onclick="changeProfilePicture(this)">
-                        <img src="foto3.jpg" alt="Foto 3"  onclick="changeProfilePicture(this)">
+                        <img src="foto1.jpg" alt="Foto 1" onclick="changeProfilePicture(this)">
+                        <img src="foto2.jpg" alt="Foto 2" onclick="changeProfilePicture(this)">
+                        <img src="foto3.jpg" alt="Foto 3" onclick="changeProfilePicture(this)">
                     </div>
                 </div>
             </div>
 
             <div class="profile-info">
-
-                <p>Ana Luisa Silva Schulz</p>
-                <p><a href="mailto:analu.sschulz@gmail.com">analu.sschulz@gmail.com</a></p>
-                <p>RA: 1221114673</p>
-                <p>Av. Professor Mário Werneck, 1685, Estoril, Belo Horizonte - MG, 30575-180</p>
-
+                <p>Nome:<span id="nome">Ana Luisa Silva Schulz</span></p>
+                <p id="email">analu.sschulz@gmail.com</p>
+                <p>RA:<span id="RA"> 1221114673</span></p>
+                <p id="cpf"></p>
+                <p id="endereco">Av. Professor Mário Werneck, 1685, Estoril, Belo Horizonte - MG, 30575-180</p>
             </div>
-
+            <button id="editar_perfil" onclick="abrirModal()">Editar Perfil</button>
+            
+            <div id="modal_editar_perfil" class="modal">
+              <div class="modal-content">
+                <span class="close-button" onclick="fecharModal()">&times;</span>
+                <h2>Editar Perfil</h2>
+    
+                <input type="text" id="edit_email" placeholder="Novo email"><br><br>
+                <input type="text" id="edit_cpf" placeholder="CPF"><br><br>
+                <input type="text" id="edit_endereco" placeholder="Novo endereço"><br><br>
+                <button id="salvar_perfil" onclick="salvarPerfilEditado()">Salvar</button>
+              </div>
         </div>
+        </div>
+        
 
         <div class="social-icons">
 
@@ -114,9 +125,8 @@
             <h1>Uc’s concluídas</h1>
 
             <hr>
-
             <div class="uc">
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Modelagem de Software</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -129,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Programação de soluções computacionais</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -142,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Ambientes computacionais e conectividade</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -155,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Sistemas distribuídos e mobile</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -168,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Modelos, métodos e técnicas da engenharia de software</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -181,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Gestão e qualidade de software</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -194,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Inovação, sustentabilidade e competitividade empresarial</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -208,7 +218,7 @@
                 </div>
 
 
-                <div class="card-uc">
+                <div class="card-uc" draggable="true">
                     <div class="detalhes_uc">
                         <div class="nome_uc">Sistemas computacionais e segurança</div>
                         <div class="cod_curso">ADS1AM-ESA1-1653573</div>
@@ -221,42 +231,30 @@
                     </div>
                 </div>
             </div>
+            <div class="botaoUC"><button class="addUC" onclick="adicionarUC()">+</button></div>
         </div>
-
 
 
         <div class="perfil_academico">
             <h2 class="titulo_h2">Meu perfil acadêmico</h2>
-            <textarea rows="4" cols="50"
-                maxlength="250">Faça um resumo do seu perfil acadêmico e profissional</textarea>
+            <textarea id="perfil_academico_textarea" rows="4" cols="50"
+                maxlength="1500">Faça um resumo do seu perfil acadêmico e profissional</textarea>
             <br>
-            <button type="button">Editar</button>
+            <div class="btnSalvar"><button class="editar" onclick="salvarPerfil('perfil_academico_textarea')">Salvar</button></div>
         </div>
-
+        
         <div class="perfil_pessoal">
             <h2 class="titulo_h2">Breve descrição de seu perfil pessoal (Hobbies, Família, esportes etc.)</h2>
-            <textarea rows="4" cols="50" maxlength="250">Faça um resumo do seu perfil pessoal</textarea>
+            <textarea id="perfil_pessoal_textarea" rows="4" cols="50" maxlength="1500">Faça um resumo do seu perfil pessoal</textarea>
             <br>
-            <button type="button">Editar</button>
-        </div>
+            <div class="btnSalvar"><button class="editar" onclick="salvarPerfil('perfil_pessoal_textarea')">Salvar</button></div>
 
     </div>
-
+    </div>
     </div>
     </div>
 
 </body>
-<script>
-    function toggleModal() {
-        var modal = document.getElementById('modal');
-        modal.classList.toggle('active');
-    }
-
-    function changeProfilePicture(element) {
-        var profilePicture = document.getElementById('profile-picture');
-        profilePicture.src = element.src;
-        toggleModal(); 
-    }
-</script>
+<script src="script.js"></script>
 
 </html>
