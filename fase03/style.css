@@ -335,6 +335,10 @@ textarea:focus {
         margin: 10px;
     }
 
+    .profile{
+        gap: 3px;
+    }
+    
     .profile img {
         width: 150px;
         height: 150px;
@@ -344,20 +348,15 @@ textarea:focus {
         text-align: center;
     }
 
-    .social-icons {
-        margin: 10px auto;
-    }
-
     .progress-bar {
         width: 100%;
+    }
+    .uc {
+        margin-right: 16px;
     }
 
     .card-uc {
         width: 100%;
-    }
-
-    .uc {
-        margin-top: 10px;
     }
 
     .modal-content {
@@ -367,5 +366,13 @@ textarea:focus {
     .galeria img {
         width: 150px;
         height: 150px;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .btnSalvar{
+        margin-right: 15px;
     }
 }
