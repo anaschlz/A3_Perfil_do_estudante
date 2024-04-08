@@ -17,27 +17,21 @@ function changeProfilePicture(element) {
 // modal editar perfil
 var editandoPerfil = false;
 
-// Função para abrir o modal
 function abrirModal() {
-    // Definir a variável de controle como verdadeira quando o botão for clicado
     editandoPerfil = true;
     document.getElementById("modal_editar_perfil").style.display = "block";
 }
 
-// Função para fechar o modal
 function fecharModal() {
     document.getElementById("modal_editar_perfil").style.display = "none";
-    // Resetar a variável de controle quando o modal for fechado
     editandoPerfil = false;
 }
 
-// Função para validar o email
 function validarEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
 
-// Função para validar o CPF
 function validarCPF(cpf) {
     var re = /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$/;
     return re.test(cpf);
@@ -203,6 +197,7 @@ function adicionarUC() {
     updateEventListeners();
 }
 
+// função salvar resumos 
 function salvarPerfil(textareaId) {
     const textarea = document.getElementById(textareaId);
     const novoTexto = textarea.value;
